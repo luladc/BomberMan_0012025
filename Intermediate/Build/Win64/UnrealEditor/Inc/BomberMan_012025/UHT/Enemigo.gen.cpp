@@ -88,14 +88,14 @@ AEnemigo::~AEnemigo() {}
 // End Class AEnemigo
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Enemigo_h_Statics
+struct Z_CompiledInDeferFile_FID_Descargas_Unreal_Projects_BomberMan_0012025_Source_BomberMan_012025_Enemigo_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AEnemigo, AEnemigo::StaticClass, TEXT("AEnemigo"), &Z_Registration_Info_UClass_AEnemigo, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemigo), 1091880157U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Enemigo_h_4252449796(TEXT("/Script/BomberMan_012025"),
-	Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Enemigo_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Magne_Documents_Unreal_Projects_BomberMan_012025_Source_BomberMan_012025_Enemigo_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Descargas_Unreal_Projects_BomberMan_0012025_Source_BomberMan_012025_Enemigo_h_4252449796(TEXT("/Script/BomberMan_012025"),
+	Z_CompiledInDeferFile_FID_Descargas_Unreal_Projects_BomberMan_0012025_Source_BomberMan_012025_Enemigo_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Descargas_Unreal_Projects_BomberMan_0012025_Source_BomberMan_012025_Enemigo_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

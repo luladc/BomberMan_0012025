@@ -49,41 +49,43 @@ void ABomberMan_012025GameMode::BeginPlay()
 	// Recorremos la matriz para generar los bloques
 	for (int32 fila = 0; fila < aMapaBloques.Num(); ++fila)
 	{
-		for (int32 columna = 0; columna < aMapaBloques[fila].Num() / 2; ++columna)
 		{
-			int32 valor = aMapaBloques[fila][columna];
-			if (columna == 24) {
-				// Calculamos la posición del bloque
-				FVector posicionBloque1 = FVector(
-					XInicial + columna * AnchoBloque,
-					YInicial + fila * LargoBloque,
-					0.0f); // Z queda en 0 (altura del bloque)
-				if (fila < 30 && fila > 25) {
+			for (int32 columna = 0; columna < aMapaBloques[fila].Num(); ++columna)
+			{
+				int32 valor = aMapaBloques[fila][columna];
+				if (columna == 49) {
+					// Calculamos la posición del bloque
+					FVector posicionBloque1 = FVector(
+						XInicial + columna * AnchoBloque,
+						YInicial + fila * LargoBloque,
+						0.0f); // Z queda en 0 (altura del bloque)
+					if (fila < 30 && fila > 25) {
 
-				}
-				else {
-					GetWorld()->SpawnActor<ABloqueMadera>(ABloqueMadera::StaticClass(), posicionBloque1, FRotator(0.0f, 0.0f, 0.0f));
-				}
-			}
-			else {
-				if (fila % 2 == 0 && columna % 2 == 0) {
-					if (valor != 0) // Si no es espacio vacío
-					{
-						// Calculamos la posición del bloque
-						FVector posicionBloque = FVector(
-							XInicial + columna * AnchoBloque,
-							YInicial + fila * LargoBloque,
-							0.0f); // Z queda en 0 (altura del bloque)
-
-						// Llamamos a la función para generar un bloque
-						SpawnBloque(posicionBloque, valor);
 					}
 					else {
+						GetWorld()->SpawnActor<ABloqueMadera>(ABloqueMadera::StaticClass(), posicionBloque1, FRotator(0.0f, 0.0f, 0.0f));
+					}
+				}
+				else {
+					if (fila % 2 == 0 && columna % 2 == 0) {
+						if (valor != 0) // Si no es espacio vacío
+						{
+							// Calculamos la posición del bloque
+							FVector posicionBloque = FVector(
+								XInicial + columna * AnchoBloque,
+								YInicial + fila * LargoBloque,
+								0.0f); // Z queda en 0 (altura del bloque)
+
+							// Llamamos a la función para generar un bloque
+							SpawnBloque(posicionBloque, valor);
+						}
+						else {
+
+						}
 
 					}
 
 				}
-
 			}
 		}
 	}
